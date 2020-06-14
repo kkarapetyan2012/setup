@@ -1,0 +1,30 @@
+@import '../../scss/main.scss';
+
+.blogList {
+    margin-top: 89px;
+    h2 {
+        font-size: 40px;
+        line-height: 53px;
+        color: $titleColor;
+        margin-bottom: 0;
+        font-family: "Segoe UI SemiBold", sans-serif;
+    }
+    .blogContainer {
+        margin-top: 70px;
+        width: 100%;
+        max-width: 1440px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .blogList {
+        margin-top: 42px;
+        h2 {
+            font-size: 30px;
+            line-height: 43px;
+        }
+        .blogContainer {
+            margin-top: 42px;
+        }
+    }
+}

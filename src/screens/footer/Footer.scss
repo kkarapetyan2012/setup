@@ -1,0 +1,26 @@
+@import '../../scss/main.scss';
+
+.footer {
+    height: 436px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: #E2E1E1;    
+    span {
+        opacity: 0.14;
+        color: $titleColor;        
+        font-size: 65px;
+        line-height: 86px;
+        font-family: "Segoe UI SemiBold", sans-serif;
+    }    
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        height: 150px; 
+        span {        
+            font-size: 48px;
+            line-height: 68px;
+        }    
+    }
+}

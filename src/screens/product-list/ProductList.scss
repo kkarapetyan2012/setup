@@ -1,0 +1,31 @@
+@import '../../scss/main.scss';
+
+.productList {
+    margin-top: 108px;
+    h2 {
+        font-size: 40px;
+        line-height: 53px;
+        color: $titleColor;
+        margin-bottom: 0;
+        font-family: "Segoe UI SemiBold", sans-serif;
+    }
+    .productContainer {
+        margin-top: 60px;
+        width: 100%;
+        max-width: 1440px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .productList {
+        margin-top: 42px;
+        h2 {
+            font-size: 30px;
+            line-height: 43px;
+            text-align: center;
+        }
+        .productContainer {
+            margin-top: 42px;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+@import '../../scss/main.scss';
+
+.gameCarousel {
+    position: relative;
+    h2 {
+        font-size: 40px;
+        line-height: 53px;
+        color: $titleColor;
+        text-align: center;
+        margin-bottom: 62px;
+        font-family: "Segoe UI SemiBold", sans-serif
+    }
+    .slick-list {
+        height: 100%;
+        .slick-track {
+            height: 100%;
+            .slick-slide {
+                display: flex;
+                justify-content: center;
+                .slideItem {
+                    width: 230px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: $light;
+                    border-radius: 8px;
+                    padding: 44px 0 45px;
+                }
+                p {
+                    margin-top: 18px;
+                    margin-bottom: 0;
+                    font-size: 22px;
+                    line-height: 30px;
+                    color: $titleColor;
+                    padding: 0 10px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    font-family: "Segoe UI SemiBold", sans-serif;
+                }
+            }
+        }      
+    }
+    .slick-dots {
+        bottom: -20px;
+        li {
+            width: 17px;
+            height: 17px;
+            button {
+                width: 17px;
+                height: 17px;
+                border-radius: 50%;
+                background-color: #D1CECE;
+                &:before {
+                    display: none;
+                }
+            }
+            &.slick-active {
+                button {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+    .divRight, 
+    .divLeft {
+        width: 481px;
+        height: 230px;
+        border-radius: 8px;
+        opacity: 0.75;
+        background-image: linear-gradient(#FFFFFF00, #FFFFFF, #FFFFFF);
+        position: absolute;
+        z-index: 1;
+    }
+    .divRight {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .gameCarousel {
+        h2 {
+            font-size: 30px;
+            line-height: 43px;
+            margin-bottom: 42px;
+        }
+        .divRight, 
+        .divLeft {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mainCarousel {
+        height: 500px;
+        .slick-list {
+            .slick-track {
+                .slick-slide {
+                    .slideItem {
+                        height: 500px;
+                        .slideInfo {
+                            top: 100px;
+                            h2 {
+                                font-size: 28px;
+                                line-height: 41px;
+                                margin-bottom: 48px;
+                            }
+                        }
+                    }
+                }
+            }      
+            
+        }
+    }
+}

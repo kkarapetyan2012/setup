@@ -1,0 +1,18 @@
+@import '../../scss/main.scss';
+
+.header {
+    background-color: #F1F1F1;
+    .headerContainer {
+        padding: 10px 160px;
+        height: 80px;
+        
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .header {
+        .headerContainer {
+            padding: 10px 15px;            
+        }
+    }
+}

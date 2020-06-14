@@ -1,0 +1,41 @@
+@import './var';
+@import '../assets/fonts/font.scss';
+
+.center {
+    width: 100%;
+    max-width: 1920px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content_center {
+    justify-content: center;
+}
+
+.justify-content_space-between {
+    justify-content: space-between;
+}
+
+.align-items_center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.myButton {
+    width: 273px;
+    height: 60px;
+    border-radius: 4px;
+    background-color: #D1CECE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

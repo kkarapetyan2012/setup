@@ -1,0 +1,34 @@
+@import '../../scss/main.scss';
+
+.informationBlock {
+    margin-bottom: 86px;
+    .informationContainer {
+        width: 100%;
+        max-width: 1602px;
+        margin-top: 8px;
+        .blockContainer {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media screen and (max-width: 1620px) {
+    .informationBlock {
+        .informationContainer {
+            .blockContainer {
+                justify-content: center;
+                .leftBlock {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                .rightBlock {
+                    display: none;
+                }
+            }
+        }       
+        
+    }
+}

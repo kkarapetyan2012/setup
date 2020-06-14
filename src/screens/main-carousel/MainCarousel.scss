@@ -1,0 +1,85 @@
+@import '../../scss/main.scss';
+
+.mainCarousel {
+    height: 650px;
+    .slick-list {
+        height: 100%;
+        background-color: #F1F1F1;
+        .slick-track {
+            height: 100%;
+            .slick-slide {
+                height: 100%;
+                .slideItem {
+                    height: 650px;
+                    position: relative;
+                    .slideInfo {
+                        width: 100%;
+                        max-width: 538px;
+                        position: absolute;
+                        top: 214px;
+                        left: 50%;
+                        text-align: center;
+                        transform: translateX(-50%);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        h2 {
+                            font-size: 40px;
+                            line-height: 53px;
+                            color: $titleColor;
+                            margin-bottom: 61px;
+                            font-family: "Segoe UI Regular", sans-serif;
+                        }
+                        
+                    }
+                }
+            }
+        }      
+        
+    }
+    .slick-dots {
+        bottom: 51px;
+        li {
+            width: 17px;
+            height: 17px;
+            button {
+                width: 17px;
+                height: 17px;
+                border-radius: 50%;
+                background-color: #D1CECE;
+                &:before {
+                    display: none;
+                }
+            }
+            &.slick-active {
+                button {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mainCarousel {
+        height: 500px;
+        .slick-list {
+            .slick-track {
+                .slick-slide {
+                    .slideItem {
+                        height: 500px;
+                        .slideInfo {
+                            top: 100px;
+                            h2 {
+                                font-size: 28px;
+                                line-height: 41px;
+                                margin-bottom: 48px;
+                            }
+                        }
+                    }
+                }
+            }      
+            
+        }
+    }
+}

@@ -1,0 +1,129 @@
+@import '../../../../scss/main.scss';
+
+.blogList {
+    .blogContainer {
+        .blogItem {
+            width: 426px;            
+            margin-bottom: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 80px;
+            .blogImageBlock {
+                padding: 69px 90px 42px 81px;
+                background-color: #CECECE;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+            .blogDescriprtion {
+                height: 195px;
+                padding: 50px 66px 0 58px;
+                background-color: #F1F1F1;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+                p {
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: $titleColor; 
+                    margin-bottom: 26px;                   
+                    font-family: "Segoe UI Regular", sans-serif;
+                }               
+                a {
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: $titleColor; 
+                    text-decoration: underline;
+                    font-family: "Segoe UI SemiBold", sans-serif;
+                }
+            }
+            &:nth-child(3n+1) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 897px) and (max-width: 1500px) {
+    .blogList {
+        .blogContainer {
+            justify-content: space-around;
+            .blogItem {
+                width: 426px;            
+                margin-bottom: 20px;
+                margin-left: 20px;
+                .blogImageBlock {
+                    padding: 20px;
+                    width: 100%;
+                }
+                .blogDescriprtion {
+                    height: 195px;
+                    padding: 20px;
+                    p {
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-bottom: 20px;
+                    }               
+                    a {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 852px) and (max-width: 896px) {
+    .blogList {
+        .blogContainer {            
+            justify-content: space-between;
+            .blogItem {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 851px) {
+    .blogList {
+        .blogContainer {
+            justify-content: center;
+            .blogItem {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blogList {
+        .blogContainer {
+            padding: 5px;
+            .blogItem {
+                width: 100%;
+                max-width: 426px;
+                .blogImageBlock {
+                    padding: 20px;
+                    width: 100%;
+                }
+                .blogDescriprtion {
+                    height: auto;
+                    padding: 20px;
+                    p {
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-bottom: 20px;
+                    }               
+                    a {
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: $titleColor;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import '../../scss/main.scss';
+
+.whyUs {
+    margin-bottom: 100px;
+    .whyUsContainer {
+        height: 400px;
+        width: 100%;
+        max-width: 1600px;
+        border-radius: 8px;
+        background-color: $light;
+        display: inline-flex;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 52px;
+        h2 {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 50px;
+            color: $titleColor;
+            font-family: "Segoe UI Bold", sans-serif;
+        }
+        p {
+            width: 100%;
+            max-width: 840px;
+            margin-bottom: 50px;
+            color: $titleColor;
+            font-family: "Segoe UI Regular" , sans-serif;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .whyUs {
+        margin-bottom: 42px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .whyUs {
+        .whyUsContainer {
+            h2 {
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 30px;
+            }
+            p {
+                padding: 15px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

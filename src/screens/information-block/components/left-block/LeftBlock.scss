@@ -1,0 +1,76 @@
+@import '../../../../scss/main.scss';
+
+.informationBlock {
+    .informationContainer {
+        .blockContainer {
+            .leftBlock {
+                h2 {
+                    font-size: 40px;
+                    line-height: 53px;
+                    color: $titleColor;
+                    font-family: "Segoe UI SemiBold", sans-serif;
+                }
+                ul {
+                    list-style: none;
+                    padding-left: 0;
+                    li {
+                        position: relative;
+                        padding-left: 76px;
+                        display: flex;
+                        align-items: center;
+                        height: 76px;
+                        a {
+                            font-size: 25px;
+                            line-height: 60px;
+                            color: $titleColor;
+                            font-family: "Segoe UI Regular", sans-serif
+                        }
+                        &::before {
+                            content: " ";
+                            position: absolute;
+                            width: 22px;
+                            height: 22px;
+                            border-radius: 10px;
+                            background-color: $light;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .informationBlock {
+        .informationContainer {
+            .blockContainer {
+                .leftBlock {
+                    h2 {
+                        font-size: 30px;
+                        line-height: 43px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .informationBlock {
+        .informationContainer {
+            .blockContainer {
+                .leftBlock {
+                    padding: 5px;
+                    ul {
+                        li {
+                            padding-left: 36px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

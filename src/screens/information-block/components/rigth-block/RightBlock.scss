@@ -1,0 +1,29 @@
+@import '../../../../scss/main.scss';
+
+.informationBlock {
+    .informationContainer {
+        .blockContainer {
+            .rightBlock {
+                position: relative;
+                .firstBlock {
+                    width: 594px;
+                    height: 410px;
+                    border-radius: 8px;
+                    background-color: $light;
+                    position: absolute;
+                    right: 0;
+                }
+                .secondBlock {
+                    width: 529px;
+                    height: 271px;
+                    border-radius: 8px;
+                    background-color: #DEDEDE;
+                    position: absolute;
+                    z-index: 2;
+                    right: 306px;
+                    top: 150px;
+                }
+            }
+        }
+    }
+}
